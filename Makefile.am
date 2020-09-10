@@ -30,6 +30,8 @@ libSDL2_gfx_la_LDFLAGS = 	\
 # Rule to build tar-gzipped distribution package
 $(PACKAGE)-$(VERSION).tar.gz: distcheck
 
+libSDL2_gfx_la_LDFLAGS += -shortname SDL2G
+
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = SDL2_gfx.pc
 
